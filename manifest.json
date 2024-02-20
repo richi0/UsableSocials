@@ -1,0 +1,24 @@
+{
+  "name": "UsableSocials",
+  "version": "1.1",
+  "manifest_version": 3,
+
+  "description": "Makes Youtube and Linkedin usable again",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*", "*://*.linkedin.com/*"],
+      "js": ["youtube.js"]
+    }
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{687dd10e-4493-4aa1-9630-6299a5c310ac}"
+    }
+  }
+}
