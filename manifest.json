@@ -1,6 +1,6 @@
 {
   "name": "UsableSocials",
-  "version": "1.1",
+  "version": "1.4",
   "manifest_version": 3,
 
   "description": "Makes Youtube and Linkedin usable again",
@@ -11,7 +11,11 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*", "*://*.linkedin.com/*"],
+      "matches": [
+        "*://*.youtube.com/*",
+        "*://*.linkedin.com/*",
+        "*://*.blick.ch/*"
+      ],
       "js": ["youtube.js"]
     }
   ],
